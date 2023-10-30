@@ -1,0 +1,11 @@
+CODE SEGMENT
+ASSUME CS:CODE
+START:
+        MOV AX,0H
+        JZ NEXT
+NEXT:
+        MOV AX,1H
+        ADD AX,19H
+        JNC START
+CODE ENDS
+END START
